@@ -278,6 +278,7 @@ def main():
     df = convert_districts(df, df_district)
     crimes = df['Crime'].unique()
     days_list = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+    st.set_page_config(layout="wide")
 
     with st.sidebar:
 
