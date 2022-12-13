@@ -253,6 +253,22 @@ def convert_shooting_df(df):
     return shooting_df
 
 
+def military_to_standard(time):
+    if time == 0:
+        time = "12 AM"
+    elif time == 12:
+        time = "12 PM"
+    elif time >= 13:
+        time -= 12
+        time = str(time)
+        time += " PM"
+    else:
+        time = str(time)
+        time += " AM"
+
+    return time
+
+
 def main():
 
     df = csv_read(FILENAME)
@@ -506,7 +522,9 @@ def main():
 
         prediction = model.predict([[district, month, day, hour]])
 
-        st.write(f"The predicted crime is {prediction[0]}")
+        hour = military_to_standard(hour)
+
+        st.write(f"The predicted crime in {district_name} on a {day_name} at {hour} is {str.lower(prediction[0])}.")
 
         if st.checkbox("Show code"):
             on_button_clicked(PREDICTION_CODE)
