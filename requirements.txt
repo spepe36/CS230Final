@@ -1,7 +1,7 @@
 streamlit
 pandas
 numpy
-matplotlib.pyplot
+matplotlib
 streamlit-option-menu
 sklearn
 folium
