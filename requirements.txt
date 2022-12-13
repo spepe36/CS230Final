@@ -1,0 +1,8 @@
+streamlit
+pandas
+numpy
+matplotlib.pyplot
+streamlit-option-menu
+sklearn
+folium
+streamlit-folium
