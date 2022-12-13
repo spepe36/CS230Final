@@ -6,3 +6,6 @@ streamlit-option-menu
 sklearn
 folium
 streamlit-folium
+sklearn-linear-model
+sklearn-model-selection
+sklearn-preprocessing 
