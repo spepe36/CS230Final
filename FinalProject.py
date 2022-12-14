@@ -298,6 +298,10 @@ def main():
         st.markdown("Hello! My name is Steven Pepe. This is my CS230 Final Project. It's a data analysis on 2021 "
                     "crimes in Boston. In this streamlit application you will find: Tables, Maps, Charts, and a "
                     "Predictive Model. Please use the sidebar to navigate yourself throughout my application. ")
+        with st.expander("Questions my data analysis looks to answer"):
+            st.info('What district do shooting crimes appear in most?  \n  '
+                    'What day are most crimes committed? - What day are most shooting crimes committed?  \n   '
+                    'Is it possible to create an accurate predictive model given the data?')
         st.image("boston police.jpg")
 
     if selected == "Map":
