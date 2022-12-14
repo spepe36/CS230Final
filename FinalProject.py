@@ -339,7 +339,7 @@ def main():
                         location=[df.iloc[i]['Lat'], df.iloc[i]['Long']],
                         popup=df.iloc[i]['Crime']
                     ).add_to(m)
-            st_data = st_folium(m, width=1000, height=700)
+            st_data = st_folium(m, width=1200, height=700)
             if st.checkbox("Show code"):
                 on_button_clicked(SHOOTING_CODE)
 
